@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>正在跳转到吃瓜主页</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        iframe {
+            width: 100%;
+            height: 90%;
+            border: none;
+        }
+        p {
+            margin: 10px 0;
+            font-size: 16px;
+            font-family: Arial, sans-serif;
+        }
+    </style>
+    <script>
+        // 设置跳转目标地址和延迟时间（以毫秒为单位）
+        const targetUrl = "https://51palu.cc"; // 替换为目标跳转地址
+        const delay = 3000; // 跳转延迟时间（单位：毫秒，3秒）
+
+        // 页面加载完成后执行跳转
+        window.onload = function() {
+            setTimeout(() => {
+                window.location.href = targetUrl;
+            }, delay);
+        };
+    </script>
+</head>
+<body>
+    <p>正在加载内容，请稍候...</p>
+    <iframe src="https://51palu.cc"></iframe>
+    <p>如果未跳转，请 <a href="https://51palu.cc">点击这里</a>。</p>
+</body>
+</html>
